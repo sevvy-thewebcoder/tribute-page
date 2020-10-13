@@ -1,0 +1,311 @@
+/* CSS VARIABLES */
+
+:root {
+  --primary-color: #892434;
+  --secondary-color: #ffdae0;
+  --background-color: #ffc0cb;
+  --main-font: "Teko", sans-serif;
+  --special-font: "Russo One", sans-serif;
+}
+
+/* RESET DEFAULT STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS UTILITIES */
+
+time {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+span {
+  margin-right: 1rem;
+}
+
+hr {
+  border-color: #ebc7ff;
+}
+
+.container {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  background: #ffc0cb;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #666;
+}
+
+/* STYLING : BODY SECTION */
+
+#main {
+  font-family: var(--main-font);
+  background: #ffdae0;
+  color: var(--primary-color);
+}
+
+/* STYLING : NAVIGATIONS SECTION */
+
+#main-header #nav-section {
+  background-color: #657b9a;
+  padding: 0.5rem 0;
+}
+
+#main-header .navigations {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+#main-header .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+
+#main-header .flex li {
+  list-style: none;
+  width: auto;
+  height: auto;
+}
+
+#main-header .flex li a {
+  display: inline-block;
+  font-family: var(--special-font);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding: 1.5rem 2.5rem;
+  margin: 0 0.5rem;
+  color: var(--secondary-color);
+  transition: all 1s ease-in-out;
+  height: 100%;
+}
+
+/* HOVER EFFECTS ON NAV LINKS */
+
+#main-header .flex li a:hover {
+  color: var(--primary-color);
+  border-radius: 5%;
+  text-shadow: 1px 1px 2px #657b9a;
+  box-shadow: 1px 1px 1px var(--primary-color),
+    -1px -1px 1px var(--primary-color);
+}
+
+/* STYLING : PAGE TITLE SECTION */
+
+#main-header #title {
+  font-family: var(--special-font);
+  color: var(--secondary-color);
+  background-color: #657b9a;
+  text-align: center;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  margin-bottom: 2px;
+  padding: 1.3rem 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 3px var(--primary-color);
+}
+
+#main-header p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.2rem 0;
+}
+
+/* STYLING : COVER IMAGE SECTION */
+
+#main-header .container figure {
+  padding: 1rem;
+}
+
+#main-header .container figure #image {
+  display: block;
+  max-width: 90%;
+  box-sizing: border-box;
+  border: 5px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 4% 5% 4% 5%;
+}
+
+#main-header .container figure #img-caption {
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 2rem;
+}
+
+/* STYLING : ABOUT SECTION */
+
+main #main-content #about {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 3rem 0 1.5rem 0;
+}
+
+main #main-content #about div h2 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+main #main-content #about div p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  margin: 1rem 0;
+  padding-top: 1rem;
+}
+
+/* STYLING : TRIBUTE SECTION */
+
+main .tribute {
+  background-color: #657b9a;
+  color: var(--secondary-color);
+}
+
+main .tribute #tribute-info {
+  margin: 0 22% 0 22%;
+  padding: 3rem 0 3rem 0;
+}
+
+main .tribute #tribute-info .speech em {
+  text-align: justify;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  padding-bottom: 1.5rem;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+main .tribute #tribute-info .speaker {
+  text-align: justify;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  padding-top: 1.5rem;
+  font-weight: bold;
+}
+
+/* STYLING : FOOTER SECTION */
+
+footer #footer-content {
+  background-color: #657b9a;
+  color: var(--secondary-color);
+}
+
+footer #footer-content section {
+  font-family: var(--special-font);
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 2rem 1rem;
+}
+
+footer #footer-content section #tribute-link {
+  color: var(--primary-color);
+}
+
+footer #footer-content section #tribute-link:hover {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+/* APPLE INC. PAGE STYLING SECTION */
+
+#main-header #gallery {
+  box-sizing: border-box;
+  background: url("http://pngimg.com/uploads/apple_logo/apple_logo_PNG19697.png")
+    no-repeat center center var(--background-color);
+  padding: 2rem;
+  height: 100%;
+  width: auto;
+}
+
+#main-header #gallery .row {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+#main-header #gallery .row .img-block {
+  position: relative;
+  text-align: center;
+  width: 70%;
+  margin: auto auto;
+}
+
+#main-header #gallery .row .img-block img {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  transition: all 2s;
+}
+
+#main-header #gallery .row .img-block img:hover {
+  width: 126%;
+  box-shadow: 1px 1px 1px #657b9a;
+}
+
+/* TIME-LINE PAGE STYLING SECTION */
+
+main #main-content #time-line h2 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+main #main-content #time-line {
+  max-width: 60%;
+  margin: 0 auto 0 auto;
+  padding: 3rem 0 1.5rem 0;
+}
+
+main #main-content #time-line #time-line-list li {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  list-style: square;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+main #main-content #time-line #time-line-list li .flex {
+  display: flex;
+  flex-direction: row;
+}
